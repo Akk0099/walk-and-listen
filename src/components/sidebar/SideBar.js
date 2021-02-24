@@ -16,6 +16,7 @@ import VolumeDown from '@material-ui/icons/VolumeDown';
 import VolumeUp from '@material-ui/icons/VolumeUp';
 import Divider from '@material-ui/core/Divider';
 import PauseIcon from '@material-ui/icons/Pause';
+import CloseIcon from '@material-ui/icons/Close';
 import "./side-bar.css";
 
 const SideBar = ({ volume, playbackRate, muted, setVolume, setPlaybackRate, setMuted, options, option, setOption, playing, setPlaying }) => {
@@ -133,7 +134,7 @@ const SideBar = ({ volume, playbackRate, muted, setVolume, setPlaybackRate, setM
                 setMuted(!muted);
               }}
             >
-              <CheckIcon />
+              <CloseIcon />
             </ToggleButton>
           </Grid>
         </Grid>
