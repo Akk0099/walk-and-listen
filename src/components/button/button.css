@@ -1,0 +1,11 @@
+.button {
+  z-index: 110;
+  position: absolute !important;
+  color: #bac7ba !important;
+  right: 0;
+  top: 0;
+}
+
+.button:hover {
+  color: lightblue;
+}
