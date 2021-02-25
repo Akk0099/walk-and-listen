@@ -15,7 +15,7 @@ const Disclamer = () => {
             >
                 <Grid item className="link">
                     <Typography className="title" variant="subtitle2">
-                        This webapp was inspired in:
+                        This webapp was inspired by:
                     </Typography>
                     <Typography className="title" variant="subtitle2">
                         <Link className="title-disclamer" href="https://driveandlisten.herokuapp.com/">
