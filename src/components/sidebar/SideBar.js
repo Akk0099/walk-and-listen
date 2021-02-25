@@ -17,6 +17,8 @@ import VolumeUp from '@material-ui/icons/VolumeUp';
 import Divider from '@material-ui/core/Divider';
 import PauseIcon from '@material-ui/icons/Pause';
 import CloseIcon from '@material-ui/icons/Close';
+import Links from "../links/links";
+import Disclamer from '../disclamer/disclamer';
 import "./side-bar.css";
 
 const SideBar = ({ volume, playbackRate, muted, setVolume, setPlaybackRate, setMuted, options, option, setOption, playing, setPlaying }) => {
@@ -43,7 +45,7 @@ const SideBar = ({ volume, playbackRate, muted, setVolume, setPlaybackRate, setM
             Walk & Listen
           </Typography>
         </Grid>
-        <Grid item className="scroll-menu">
+        <Grid item className="menu">
           <Typography variant="subtitle1" className="title">
             Scroll for more places
           </Typography>
@@ -61,7 +63,7 @@ const SideBar = ({ volume, playbackRate, muted, setVolume, setPlaybackRate, setM
             ))}
           </Tabs>
         </Grid>
-        <Grid item className="scroll-menu">
+        <Grid item className="menu">
           <Grid
             container
             direction="row"
@@ -119,7 +121,7 @@ const SideBar = ({ volume, playbackRate, muted, setVolume, setPlaybackRate, setM
             </Grid>
           </Grid>
         </Grid>
-        <Grid item className="scroll-menu">
+        <Grid item className="menu">
           <Grid
             container
             direction="row"
@@ -138,7 +140,7 @@ const SideBar = ({ volume, playbackRate, muted, setVolume, setPlaybackRate, setM
             </ToggleButton>
           </Grid>
         </Grid>
-        <Grid item className="scroll-menu">
+        <Grid item className="menu">
           <Grid
             container
             direction="column"
@@ -146,34 +148,10 @@ const SideBar = ({ volume, playbackRate, muted, setVolume, setPlaybackRate, setM
             alignItems="center"
           >
             <Grid item>
-              <Typography className="title" variant="subtitle2">
+              <Typography variant="subtitle2">
                 Volume
               </Typography>
             </Grid>
-            {/* <Grid item>
-              <Grid
-                container
-                direction="row"
-                justify="center"
-                alignItems="center"
-              >
-                <Grid item>
-                  <IconButton className="iconbutton">
-                    <SkipPreviousIcon className="white-icon" />
-                  </IconButton>
-                </Grid>
-                <Grid item>
-                  <IconButton className="iconbutton">
-                    <PlayArrowIcon className="white-icon" />
-                  </IconButton>
-                </Grid>
-                <Grid item>
-                  <IconButton className="iconbutton">
-                    <SkipNextIcon className="white-icon" />
-                  </IconButton>
-                </Grid>
-              </Grid>
-            </Grid> */}
           </Grid>
           <Grid item className="volume-slider">
             <Grid container direction="row" justify="center"
@@ -193,6 +171,8 @@ const SideBar = ({ volume, playbackRate, muted, setVolume, setPlaybackRate, setM
             </Grid>
           </Grid>
         </Grid>
+        <Links video={option.video} />
+        <Disclamer/>
       </Grid>
     </Container>
   );

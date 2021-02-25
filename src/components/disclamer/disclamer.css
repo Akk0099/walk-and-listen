@@ -1,0 +1,22 @@
+.menu {
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #b9bdb5;
+    background: rgba(41, 44, 44, 0.7);
+  }
+
+.white {
+    color: white !important;
+}
+
+.title-disclamer {
+    font-weight: bold !important;
+    color: rgb(216, 168, 34) !important;
+}
+
+.link{
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
